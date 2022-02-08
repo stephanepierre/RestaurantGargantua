@@ -101,6 +101,10 @@
   width: 45px;
 }
 
+.rotate_spoonleft{
+  transform: rotate(180deg);
+}
+
 @media screen and (min-width: 2000px) {
   .custom__button,
   .p__cormorant {

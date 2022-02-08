@@ -1,10 +1,37 @@
 import React from 'react';
-
+import { images } from '../../constants';
 import './AboutUs.css';
 
 const AboutUs = () => (
-  <div>
-    AboutUs
+  <div className="app__aboutus app__bg flex__center section__padding" id="about">
+    <div className="app__aboutus-overlay flex__center">
+      <img src={images.G} alt="g letter" />
+    </div>
+
+    <div className="app__aboutus-content flex__center">
+      <div className="app__aboutus-content_about">
+        <h1 className="headtext__cormorant">A Propos</h1>
+        <img src={images.spoon} alt="about_spoon" className="rotate_spoonleft" />
+        <p className="p__opensans">
+          Eiusmod qui proident consequat id ut culpa qui aliquip dolore quis duis eiusmod duis ad. Amet labore aliqua proident cillum voluptate nisi in reprehenderit qui excepteur enim adipisicing. Non eiusmod nostrud ad cupidatat incididunt dolor ea enim reprehenderit.
+        </p>
+        <button type="button" className="custom__button">En savoir plus</button>
+      </div>
+
+      <div className="app__aboutus-content_knife flex__center">
+        <img src={images.knife} alt="knife" />
+      </div>
+
+      <div className="app__aboutus-content_history">
+        <h1 className="headtext__cormorant">Notre Histoire</h1>
+        <img src={images.spoon} alt="about_spoon" className="" />
+        <p className="p__opensans">
+          Eiusmod qui proident consequat id ut culpa qui aliquip dolore quis duis eiusmod duis ad. Amet labore aliqua proident cillum voluptate nisi in reprehenderit qui excepteur enim adipisicing. Non eiusmod nostrud ad cupidatat incididunt dolor ea enim reprehenderit.
+        </p>
+        <button type="button" className="custom__button">En savoir plus</button>
+      </div>
+
+    </div>
   </div>
 );
 
